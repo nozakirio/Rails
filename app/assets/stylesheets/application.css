@@ -83,7 +83,9 @@ main {
   color: gray;
   font-size: 12px;
   overflow: hidden;
+  /*テキストを折り返し表示させないようにする*/
   white-space: nowrap;
+  /*領域をはみ出したテキストを三点リーダー（...）で省略表示する*/
   text-overflow: ellipsis;
 }
 
