@@ -10,6 +10,7 @@ class TodolistsController < ApplicationController
     redirect_to todolist_path(list.id)
   end
   def index
+    puts "作成したキー #{ENV['SECRET_KEY']}"
     # List.allメソッドで、listsテーブルから全てのデータを配列で取得
     @lists = List.all
   end
